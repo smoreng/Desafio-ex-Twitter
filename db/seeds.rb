@@ -7,3 +7,7 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+100.times do |i|
+	Tweet.create(description: Faker::Twitter.user[:description], username: Faker::Twitter.user[:name])
+end
